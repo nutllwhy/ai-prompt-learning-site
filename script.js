@@ -403,6 +403,85 @@ const casesData = {
             image: "images/056-le-corbusier-modern-architecture-poster.png",
             prompt: "A professional cinematic poster titled LE CORBUSIER. The central theme is a complex double exposure effect featuring the side profile silhouette of the architect Le Corbusier, complete with his signature round-framed glasses and a subtle tie. Inside his silhouette, a breathtaking layered composition illustrates the evolution of modern architecture through his key works."
         }
+    ],
+    dianshang: [
+        {
+            id: 57,
+            title: "白底主图：手持挂烫机",
+            method: "文生图",
+            image: "images/01-white-background-main-image.png",
+            prompt: "电商白底主图，产品是一个便携手持挂烫机，产品名「蒸汽小白 2 Pro」。纯白背景，柔和棚拍光，轻微落地阴影。主体是白色手持挂烫机，透明水箱，可以看到细节，旁边放一件折叠好的亚麻衬衫，有少量蒸汽。1:1 方图，淘宝/京东主图风格，专业产品摄影，只在机器上出现小字「蒸汽小白 2 Pro」，不要水印，不要多余文字。"
+        },
+        {
+            id: 58,
+            title: "618 促销海报：牙膏品类",
+            method: "文生图",
+            image: "images/02-618-promo-poster.png",
+            prompt: "618 促销海报，产品是「青柠薄荷牙膏」。绿色和白色清爽渐变背景，有青柠片、薄荷叶、水花。主体是两支牙膏和旅行装小样。中文文字清晰：主标题「618囤货季」，产品名「青柠薄荷牙膏」，促销「69元买一送一」，角标「再送旅行装」，按钮「立即抢购」。竖版 3:4，天猫/淘宝大促风格，高级但转化导向，不要真实品牌 logo，不要二维码，不要水印。"
+        },
+        {
+            id: 59,
+            title: "护肤品详情页首屏",
+            method: "文生图",
+            image: "images/03-detail-page-skincare.png",
+            prompt: "电商详情页首屏，护肤品是「HYDRA MOIST 玻尿酸精华」。蓝色透明水感背景，漂浮玻尿酸气泡，干净的护肤实验室氛围。主体是玻璃滴管精华瓶，有水珠和光线折射。中文卖点包括：「72小时深层补水」、「三重玻尿酸」、「敏感肌可用」、「清爽不黏腻」。竖版详情页长图切片，高级护肤品电商风格，四个卖点 icon 清楚，不要医疗夸大，不要真实品牌 logo，不要水印。"
+        },
+        {
+            id: 60,
+            title: "家居场景图：人体工学椅",
+            method: "文生图",
+            image: "images/04-lifestyle-chair.png",
+            prompt: "真实生活方式产品场景图，产品是人体工学办公椅「云坐 Air Chair」。温暖现代的家庭书房，早晨阳光从窗户照进来，木质书桌、笔记本电脑、绿植，干净舒服。主体是奶油色人体工学椅，透气网布靠背，可调节头枕和腰托，有一个人自然坐在椅子上侧身办公。4:5 竖图，小红书/电商场景图风格，产品清晰可见，真实摄影感，不要文字，不要水印。"
+        },
+        {
+            id: 61,
+            title: "服装模特图：防晒衣",
+            method: "文生图",
+            image: "images/05-apparel-model-poster.png",
+            prompt: "服装电商模特海报，产品是「云感防晒衣」。明亮的春季城市街道，柔和阳光，干净高级的户外通勤氛围。年轻女性模特穿米色宽松连帽防晒衣，搭配休闲长裤和斜挎包，全身穿搭清楚，自然走路姿势。中文文字：「云感防晒衣」、「UPF50+」、「轻到像没穿」、「通勤/旅行/户外」、「到手价 ¥199」。竖版 3:4，服装电商风格，产品细节清楚，不要真实品牌 logo，不要水印。"
+        },
+        {
+            id: 62,
+            title: "包装设计：精品咖啡",
+            method: "文生图",
+            image: "images/06-coffee-packaging.png",
+            prompt: "高端包装设计 mockup，品牌是精品咖啡「山谷回声 Valley Echo」。温暖中性色棚拍，牛皮纸质感，咖啡豆、陶瓷杯、柔和阴影。主体是一个哑光咖啡袋和一个外包装礼盒，标签上有山脉线稿，中文产品名「山谷回声」，副标题「云南小粒咖啡」，烘焙程度「中深烘焙」。1:1 方图，高级电商产品渲染风格，不要真实品牌 logo，不要水印。"
+        },
+        {
+            id: 63,
+            title: "食品摄影：香辣脆豆腐",
+            method: "文生图",
+            image: "images/07-food-photo.png",
+            prompt: "商业食品摄影，产品是「香辣脆豆腐」。深色温暖桌面，辣油光泽，干辣椒、芝麻、葱花，浅景深。主体是一碗金黄香辣脆豆腐块，有一块被筷子夹起来，能看到热气和酥脆纹理。4:5 竖图，外卖/淘宝食品主图风格，真实诱人，不要文字，不要水印，不要过度霓虹色。"
+        },
+        {
+            id: 64,
+            title: "直播间画面：洁面乳",
+            method: "文生图",
+            image: "images/08-livestream-room.png",
+            prompt: "直播电商 App 画面截图，销售产品是「氨基酸洁面乳 120ml」。竖版手机直播间界面，暖色浴室置物架背景，友好的女性主播拿着洁面乳，能看到商品卡片和聊天评论。中文文字包括：「直播中」、「氨基酸洁面乳 120ml」、「今晚到手 ¥59」、「去购买」，评论包括「敏感肌能用吗」、「泡沫好细」。9:16 手机截图风格，类似抖音/快手直播间但不要真实平台 logo，不要真实品牌名，不要水印。"
+        },
+        {
+            id: 65,
+            title: "小红书种草封面：香薰",
+            method: "文生图",
+            image: "images/09-xiaohongshu-fragrance.png",
+            prompt: "小红书风格产品种草封面，产品是家居香薰「晚风香薰」。温馨卧室床头柜，亚麻床品，暖色台灯，玻璃藤条香薰瓶，小花和书。中文文字：「睡前香氛清单」、「晚风香薰」、「一打开就像住进酒店」、「卧室/浴室/玄关都好闻」。竖版 3:4，干净生活方式拼贴，有手写贴纸装饰，高级但自然，不要真实品牌 logo，不要水印，不要文字太多。"
+        },
+        {
+            id: 66,
+            title: "跨境电商广告：便携榨汁杯",
+            method: "文生图",
+            image: "images/10-crossborder-blender.png",
+            prompt: "Amazon 风格产品广告图，产品是便携榨汁杯「BlendGo Mini」。明亮厨房台面，水果切片、果昔杯、清晨自然光。主体是无线便携榨汁杯，USB-C 充电底座，防漏杯盖，两种颜色：鼠尾草绿和白色。英文文字：「BlendGo Mini」、「Fresh Smoothies Anywhere」、「USB-C Rechargeable」、「6 Blades」、「Leakproof」。1:1 方图，国际电商广告风格，排版清晰，高级但亲和，不要真实平台 logo，不要虚假评论，不要水印。"
+        },
+        {
+            id: 67,
+            title: "宠物礼盒海报",
+            method: "文生图",
+            image: "images/11-pet-gift-set.png",
+            prompt: "电商礼盒海报，产品是宠物护理组合「毛孩子春日护理礼盒」。柔和浅绿色和奶油色背景，干净棚拍桌面，宠物友好、春日清新。主体包括宠物沐浴露、护爪膏、梳毛刷、毛巾、礼盒包装，包装上有小狗剪影插画。中文文字：「春日护理礼盒」、「洗护/梳毛/护爪 一盒搞定」、「新客到手 ¥129」、「送定制宠物毛巾」。竖版 3:4，天猫礼盒海报风格，温暖可信，不要真实品牌 logo，不要医疗功效宣称，不要水印。"
+        }
     ]
 };
 
