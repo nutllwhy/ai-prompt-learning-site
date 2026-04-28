@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 图像生成提示词教学手册</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 侧边导航 -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>📚 提示词手册</h2>
+            <button class="close-btn" id="closeSidebar">×</button>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#intro" class="nav-link">使用导读</a></li>
+            <li><a href="#chapter1" class="nav-link">第一章：基础认知</a></li>
+            <li><a href="#chapter2" class="nav-link">第二章：使用准备</a></li>
+            <li><a href="#chapter3" class="nav-link">第三章：提示词基础</a></li>
+            <li><a href="#chapter4" class="nav-link">第四章：提示词进阶</a></li>
+            <li><a href="#chapter5" class="nav-link">第五章：实战案例库</a></li>
+            <li><a href="#appendix" class="nav-link">附录：工具库</a></li>
+        </ul>
+    </nav>
+
+    <!-- 移动端菜单按钮 -->
+    <button class="menu-btn" id="menuBtn">☰ 目录</button>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <!-- 头部 -->
+        <header class="hero">
+            <h1>AI 图像生成提示词教学手册</h1>
+            <p class="subtitle">从零基础到专业创作者的全链路学习指南</p>
+            <div class="hero-tags">
+                <span class="tag">GPT Image 2</span>
+                <span class="tag">提示词技巧</span>
+                <span class="tag">56个实战案例</span>
+            </div>
+        </header>
+
+        <!-- 适用对象 -->
+        <section id="intro" class="section">
+            <div class="callout info">
+                <p>本文档面向企业内部员工，用于学习 AI 图像生成提示词的写法、拆解方法和可复用案例。适合市场、品牌、设计、产品、电商、内容运营、培训等岗位作为内部学习资料使用。</p>
+            </div>
+            
+            <h2>学习目标</h2>
+            <ul class="feature-list">
+                <li>理解图像生成模型能力边界</li>
+                <li>掌握提示词结构</li>
+                <li>建立案例拆解思路</li>
+                <li>形成可复用模板</li>
+            </ul>
+
+            <div class="callout success">
+                <h3>本手册核心特色</h3>
+                <ol>
+                    <li><strong>无断层学习路径</strong>：从第一次生图的零门槛操作，到专业级商业创作，循序渐进</li>
+                    <li><strong>全场景案例覆盖</strong>：涵盖 10+ 主流行业的实战案例，每个案例都包含完整的需求分析、提示词设计</li>
+                    <li><strong>可视化内容呈现</strong>：核心知识点采用表格对比、公式拆解、步骤清单呈现</li>
+                    <li><strong>极致实用性</strong>：不仅讲"怎么做"，更讲"为什么这么做"</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 第一章：基础认知 -->
+        <section id="chapter1" class="section">
+            <h2>第一章：基础认知</h2>
+            
+            <h3>1.1 什么是 GPT Image 2</h3>
+            <p>GPT image 2.0 是由 OpenAI 推出的全新图像生成引擎，官方名字是 <strong>ChatGPT Images 2.0</strong>，模型代号 GPT-image-2。这个版本比之前的图像模型更先进、更强大。</p>
+            
+            <p>和过去的图像生成工具不同，它不是简单把文字翻译成图画，而是加入了<strong>"思考"能力</strong>。这意味着它生成图像之前，会先理解你的提示、规划画面结构，再动手画图。</p>
+
+            <div class="callout success">
+                <h4>它最值得关注的能力</h4>
+                <ul>
+                    <li>真实感很强的人像、商品图、空间图和摄影风格画面</li>
+                    <li>包含大量文字的海报、页面、直播界面、信息图和杂志封面</li>
+                    <li>参考图重绘、局部编辑、截图式生成</li>
+                    <li>多格漫画、角色关系图、品牌提案等结构化图像</li>
+                </ul>
+            </div>
+
+            <h3>1.2 GPT Image 2 核心特性</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>核心特性</th><th>详细说明</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>极致的自然语言理解</td><td>无需结构化的提示词咒语，纯自然语言就能精准还原复杂叙事</td></tr>
+                        <tr><td>无缝对话式迭代修改</td><td>生成图片后无需重写完整提示词，直接用自然语言提出修改需求</td></tr>
+                        <tr><td>多模态上下文感知</td><td>支持上传参考图，结合文本指令生成内容</td></tr>
+                        <tr><td>超高画质与细节还原</td><td>支持 1024×1024、1792×1024、1024×1792 三种高清尺寸</td></tr>
+                        <tr><td>全生态集成与多端适配</td><td>深度集成于 ChatGPT 生态，支持网页端、桌面端、移动端</td></tr>
+                        <tr><td>清晰的商用版权规则</td><td>用户拥有完整使用权（包括商用权限）</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 第二章：使用准备 -->
+        <section id="chapter2" class="section">
+            <h2>第二章：使用准备与风险提醒</h2>
+            
+            <h3>2.1 权限说明</h3>
+            <p>GPT Image 2 是 ChatGPT Plus/Team/Enterprise 用户专属功能，免费版 ChatGPT 不支持该功能。你需要先开通 ChatGPT Plus 会员（20 美元/月）才能使用全部功能。</p>
+
+            <h3>2.2 账号注册与开通步骤</h3>
+            <ol class="steps">
+                <li><strong>访问官方网站</strong>：打开浏览器访问 <a href="https://chat.openai.com" target="_blank">chat.openai.com</a></li>
+                <li><strong>账号注册</strong>：点击「Sign up」，使用 Gmail、Outlook 等主流邮箱注册</li>
+                <li><strong>开通 Plus 会员</strong>：登录后点击左下角账号名称，选择「Upgrade to Plus」</li>
+                <li><strong>权限确认</strong>：在模型选择下拉框中能看到「GPT-4o」选项即代表开通成功</li>
+            </ol>
+
+            <div class="callout warning">
+                <h4>风险预警：警惕"图片诈骗"时代</h4>
+                <p>gpt-image-2 真正需要警惕的地方，不是它画得假，而是它画得太真。建议坚持四条底线：</p>
+                <ol>
+                    <li>只认原始链接，不把单张截图当证据</li>
+                    <li>必须做多源交叉验证</li>
+                    <li>越是结构完整、文字清晰的"真图"，越要提高警惕</li>
+                    <li>涉及商务投放时，必须索要源文件或原始素材</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 第三章：提示词基础 -->
+        <section id="chapter3" class="section">
+            <h2>第三章：提示词基础技巧</h2>
+            
+            <p>提示词（Prompt）是 AI 生图的核心，本质是给 AI 的"创作说明书"。GPT Image 2 无需复杂的权重咒语，自然语言即可实现精准生成。</p>
+
+            <h3>3.1 提示词核心原则</h3>
+            <ol class="principles">
+                <li><strong>精准具体</strong>：越具体的描述，生成的画面越符合预期</li>
+                <li><strong>逻辑清晰</strong>：按照"主体-场景-风格-参数"的顺序描述</li>
+                <li><strong>正向描述</strong>：多用正向指令告诉 AI"要什么"，而非"不要什么"</li>
+                <li><strong>避免矛盾</strong>：不要输入相互冲突的指令</li>
+                <li><strong>适度控制</strong>：核心元素不超过 5 个，风格不超过 2 种</li>
+            </ol>
+
+            <h3>3.2 新手万能公式</h3>
+            <div class="formula-box">
+                <code>【核心主体+细节描述】 + 【场景/环境+背景细节】 + 【艺术风格/表现形式】 + 【构图/镜头/视角】 + 【光影/氛围/情绪】 + 【画面质量/技术参数】</code>
+            </div>
+
+            <h4>模块拆解</h4>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <h5>模块 1：核心主体</h5>
+                    <p>画面的视觉中心，包括主体的类型、数量、外貌、动作、材质等细节</p>
+                    <span class="tag required">必填项</span>
+                </div>
+                <div class="module-card">
+                    <h5>模块 2：场景环境</h5>
+                    <p>主体所在的环境，包括时间、地点、天气、环境元素</p>
+                    <span class="tag required">必填项</span>
+                </div>
+                <div class="module-card">
+                    <h5>模块 3：艺术风格</h5>
+                    <p>决定画面的整体视觉效果，需明确 1-2 种核心风格</p>
+                    <span class="tag required">必填项</span>
+                </div>
+                <div class="module-card">
+                    <h5>模块 4：构图镜头</h5>
+                    <p>决定画面的视角、主体位置、空间感</p>
+                    <span class="tag optional">可选项</span>
+                </div>
+                <div class="module-card">
+                    <h5>模块 5：光影氛围</h5>
+                    <p>决定画面的情绪基调，是画面的"情绪内核"</p>
+                    <span class="tag optional">可选项</span>
+                </div>
+                <div class="module-card">
+                    <h5>模块 6：画面质量</h5>
+                    <p>用于提升画面清晰度、质感</p>
+                    <span class="tag optional">可选项</span>
+                </div>
+            </div>
+
+            <h3>3.3 完整案例演示</h3>
+            <div class="example-box">
+                <div class="example-header">
+                    <span class="example-label">示例提示词</span>
+                    <button class="copy-btn" data-prompt="一个 20 岁左右的东亚女孩，黑色长直发，齐刘海，穿着白色的棉麻连衣裙，赤着脚蹲在草地上，低头闻着手里的小雏菊，脸上带着温柔的笑容，在春天的郊外草地上，地面开满了白色和黄色的小雏菊，背景是成片的绿色树林，远处有连绵的青山，天空是淡蓝色的，飘着几朵白云，新海诚动画电影风格，画面色彩清新柔和，光影细腻，中景镜头，平拍视角，三分法构图，人物放在画面左侧三分线位置，右侧留白，上午的柔和侧光，阳光从画面左侧照进来，光线通透，整体暖色调，氛围清新治愈，8K 超高清，画质细腻，细节丰富，无噪点">复制</button>
+                </div>
+                <p>一个 20 岁左右的东亚女孩，黑色长直发，齐刘海，穿着白色的棉麻连衣裙，赤着脚蹲在草地上，低头闻着手里的小雏菊，脸上带着温柔的笑容，在春天的郊外草地上，地面开满了白色和黄色的小雏菊，背景是成片的绿色树林，远处有连绵的青山，天空是淡蓝色的，飘着几朵白云，新海诚动画电影风格，画面色彩清新柔和，光影细腻，中景镜头，平拍视角，三分法构图，人物放在画面左侧三分线位置，右侧留白，上午的柔和侧光，阳光从画面左侧照进来，光线通透，整体暖色调，氛围清新治愈，8K 超高清，画质细腻，细节丰富，无噪点</p>
+            </div>
+
+            <h3>3.4 新手避坑指南</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>常见错误</th><th>错误影响</th><th>解决方案</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>描述过于笼统模糊</td><td>生成画面完全随机</td><td>把模糊描述换成具体细节</td></tr>
+                        <tr><td>大量使用否定词</td><td>易忽略否定内容</td><td>把否定描述换成正向描述</td></tr>
+                        <tr><td>堆砌过多风格关键词</td><td>画面四不像</td><td>只保留 1-2 种核心风格</td></tr>
+                        <tr><td>输入矛盾指令</td><td>画面逻辑混乱</td><td>确保描述内容逻辑自洽</td></tr>
+                        <tr><td>堆砌过多元素</td><td>画面拥挤混乱</td><td>核心元素不超过 5 个</td></tr>
+                        <tr><td>提示词过长（超 500 字）</td><td>AI 忽略后半部分</td><td>控制在 100-300 字</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 第四章：提示词进阶 -->
+        <section id="chapter4" class="section">
+            <h2>第四章：提示词进阶技巧</h2>
+            
+            <h3>4.1 权重控制</h3>
+            <p>GPT Image 2 不支持（）、[]等权重符号，而是通过自然语言的强调实现元素权重的控制。</p>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>权重等级</th><th>控制方法</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>最高权重</strong>（核心主体）</td><td>放在提示词最开头；明确说明"画面核心主体、C 位、重点突出"</td></tr>
+                        <tr><td><strong>中等权重</strong>（辅助元素）</td><td>放在提示词中间，明确说明"作为辅助元素、清晰可见"</td></tr>
+                        <tr><td><strong>最低权重</strong>（背景元素）</td><td>放在提示词最后，明确说明"作为背景、弱化处理、虚化"</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>4.2 主流风格模板</h3>
+            <div class="style-cards">
+                <div class="style-card">
+                    <h4>商业人像摄影</h4>
+                    <p>佳能 R5 相机，85mm f/1.2 定焦镜头，ISO 100，专业人像打光，皮肤质感细腻</p>
+                </div>
+                <div class="style-card">
+                    <h4>新海诚动画风格</h4>
+                    <p>色彩清新柔和，光影细腻通透，氛围感强，细节丰富</p>
+                </div>
+                <div class="style-card">
+                    <h4>中国水墨国风</h4>
+                    <p>宣纸质感，笔墨浓淡有致，意境悠远，留白恰当</p>
+                </div>
+                <div class="style-card">
+                    <h4>赛博朋克风格</h4>
+                    <p>夜晚雨天，霓虹灯牌，全息投影，冷暖对比色调，蓝紫橙配色</p>
+                </div>
+                <div class="style-card">
+                    <h4>3D 产品渲染</h4>
+                    <p>C4D 渲染，OC 渲染器，8K 超高清，3S 材质，质感真实</p>
+                </div>
+                <div class="style-card">
+                    <h4>日系胶片摄影</h4>
+                    <p>富士胶片，柯达金 200，胶片颗粒感，暖色调，复古氛围感</p>
+                </div>
+            </div>
+
+            <h3>4.3 文字生成技巧</h3>
+            <ol>
+                <li>文字要简短，控制在 10 个字以内</li>
+                <li>明确说明文字的内容、字体、位置、颜色、大小</li>
+                <li>文字所在的区域背景要简洁</li>
+                <li>如有错别字，用局部修改功能重新生成</li>
+            </ol>
+        </section>
+
+        <!-- 第五章：实战案例库 -->
+        <section id="chapter5" class="section">
+            <h2>第五章：实战案例库</h2>
+            
+            <!-- 文创类 -->
+            <div class="case-category">
+                <h3 class="category-title">🎨 文创类</h3>
+                <p class="category-desc">兼具收藏感、知识密度和二次创作空间，适合文旅号、知识号、出版社、展览物料和文创周边的原型生产。</p>
+                
+                <div class="cases-grid" id="cases-wenchuang">
+                    <!-- 案例通过 JS 动态加载 -->
+                </div>
+            </div>
+
+            <!-- 影视类 -->
+            <div class="case-category">
+                <h3 class="category-title">🎬 影视类</h3>
+                <p class="category-desc">体现电影感和提案感，把分镜、设定、棚拍、宣传板整合成完整的成片方案。</p>
+                
+                <div class="cases-grid" id="cases-yingshi">
+                </div>
+            </div>
+
+            <!-- 跨IP类 -->
+            <div class="case-category">
+                <h3 class="category-title">🎮 跨 IP 类</h3>
+                <p class="category-desc">让角色、界面、游戏语法和平台风格看起来像原本就属于同一个宇宙。</p>
+                
+                <div class="cases-grid" id="cases-kuagip">
+                </div>
+            </div>
+
+            <!-- 品牌联动类 -->
+            <div class="case-category">
+                <h3 class="category-title">🏷️ 品牌联动类</h3>
+                <p class="category-desc">完整模拟广告、直播、电商详情页、菜单、杂志、官网等真实商业载体。</p>
+                
+                <div class="cases-grid" id="cases-pinpai">
+                </div>
+            </div>
+
+            <!-- 恶搞类 -->
+            <div class="case-category">
+                <h3 class="category-title">😂 恶搞类</h3>
+                <p class="category-desc">把"梗"做成完整视觉成品，只要文字可读、画面够真、反差够大，就极易形成转发。</p>
+                
+                <div class="cases-grid" id="cases-egao">
+                </div>
+            </div>
+
+            <!-- 建筑设计类 -->
+            <div class="case-category">
+                <h3 class="category-title">🏛️ 建筑设计类</h3>
+                <p class="category-desc">建筑竞赛级效果图与大师研究海报。</p>
+                
+                <div class="cases-grid" id="cases-jianzhu">
+                </div>
+            </div>
+        </section>
+
+        <!-- 附录 -->
+        <section id="appendix" class="section">
+            <h2>附录：工具库</h2>
+            
+            <h3>常用关键词库</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>分类</th><th>常用关键词</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>景别/镜头</td><td>特写、近景、中景、全景、远景、微距、鱼眼镜头、广角镜头、长焦镜头、航拍、俯拍、仰拍、平拍</td></tr>
+                        <tr><td>光影/打光</td><td>柔光、硬光、侧光、逆光、顶光、伦勃朗光、蝴蝶光、轮廓光、自然光、电影打光、黄金时刻光线</td></tr>
+                        <tr><td>风格/艺术</td><td>写实摄影、商业摄影、日系清新、新海诚风格、水墨国风、赛博朋克、3D 渲染、水彩、像素风</td></tr>
+                        <tr><td>质感/材质</td><td>哑光、高光、金属质感、玻璃质感、陶瓷质感、丝绸质感、皮革质感、木质纹理、胶片颗粒感</td></tr>
+                        <tr><td>氛围/情绪</td><td>治愈、温馨、清冷、孤独、热血、紧张、悬疑、繁华、静谧、复古、怀旧、未来感、科技感</td></tr>
+                        <tr><td>画质/参数</td><td>8K 超高清、4K 超清、画质细腻、细节丰富、无噪点、RAW 格式、专业修图、高分辨率</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>万能提示词模板</h3>
+            
+            <div class="template-box">
+                <h4>电商产品主图模板</h4>
+                <div class="example-header">
+                    <button class="copy-btn" data-prompt="【产品名称+外观细节】，产品放在画面 C 位，重点突出，【背景类型】背景，【打光方式】专业打光，突出产品的【核心质感/卖点】，画面干净高级，无多余元素，电商产品主图，商业摄影风格，【相机+镜头参数】，8K 超高清，画质细腻，细节拉满，无噪点">复制模板</button>
+                </div>
+                <code>【产品名称+外观细节】，产品放在画面 C 位，重点突出，【背景类型】背景，【打光方式】专业打光，突出产品的【核心质感/卖点】，画面干净高级，无多余元素，电商产品主图，商业摄影风格，【相机+镜头参数】，8K 超高清，画质细腻，细节拉满，无噪点</code>
+            </div>
+
+            <div class="template-box">
+                <h4>人像摄影模板</h4>
+                <div class="example-header">
+                    <button class="copy-btn" data-prompt="【人物特征+穿着+动作】，在【场景环境】，【风格】摄影风格，【镜头+景别】，【光影类型】，画面整体【色调】，氛围【情绪】，【相机+镜头参数】，8K 超高清，画质细腻，细节丰富">复制模板</button>
+                </div>
+                <code>【人物特征+穿着+动作】，在【场景环境】，【风格】摄影风格，【镜头+景别】，【光影类型】，画面整体【色调】，氛围【情绪】，【相机+镜头参数】，8K 超高清，画质细腻，细节丰富</code>
+            </div>
+
+            <div class="template-box">
+                <h4>海报设计模板</h4>
+                <div class="example-header">
+                    <button class="copy-btn" data-prompt="【海报类型】海报，【构图比例】构图，画面主体是【核心主体】，画面【位置】添加【字体+颜色】文字：【文字内容】，文字清晰可辨，无错别字，整体风格【风格特点】，【色调】为主色调，画面【留白位置】留白，用于添加信息，8K 高清，海报设计质感">复制模板</button>
+                </div>
+                <code>【海报类型】海报，【构图比例】构图，画面主体是【核心主体】，画面【位置】添加【字体+颜色】文字：【文字内容】，文字清晰可辨，无错别字，整体风格【风格特点】，【色调】为主色调，画面【留白位置】留白，用于添加信息，8K 高清，海报设计质感</code>
+            </div>
+
+            <h3>内部练习建议</h3>
+            <ol>
+                <li>每位学习者选择 1 个业务场景，使用"主体-场景-风格-构图-光影-质量"公式写出 3 条提示词</li>
+                <li>每条提示词至少迭代 2 轮，记录修改前后的差异和有效指令</li>
+                <li>团队复盘时重点观察：文字是否准确、主体是否稳定、品牌调性是否统一、合规风险是否可控</li>
+                <li>对外发布前，必须经过品牌、法务或业务负责人确认</li>
+            </ol>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>AI 图像生成提示词教学手册 · 企业内部版</p>
+            <p>内容仅供学习参考，请遵守相关法律法规</p>
+        </footer>
+    </main>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" title="返回顶部">↑</button>
+
+    <!-- Toast 提示 -->
+    <div class="toast" id="toast">已复制到剪贴板</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
