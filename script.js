@@ -55,7 +55,7 @@ const casesData = {
             title: "等距像素艺术进化博物馆",
             method: "文生图",
             image: "images/008-isometric-pixel-evolution-museum.png",
-            prompt: "制作一张等距像素风"进化博物馆"信息图，用多个展厅和时间节点展示某个主题的演化过程，带标题、年代标签、展台说明和路线引导，让它像可玩的博物馆导览海报。"
+            prompt: "制作一张等距像素风「进化博物馆」信息图，用多个展厅和时间节点展示某个主题的演化过程，带标题、年代标签、展台说明和路线引导，让它像可玩的博物馆导览海报。"
         },
         {
             id: 9,
@@ -134,7 +134,7 @@ const casesData = {
             title: "黑神话：悟空游戏场景",
             method: "文生图",
             image: "images/019-eastern-myth-action-game-scene.png",
-            prompt: "生成一张《黑神话：悟空》风格的游戏场景截图，画面表现悟空被二郎神击飞的瞬间，带强动作姿态、粒子效果、东方神话氛围和电影级战斗冲击力。"
+            prompt: "生成一张「黑神话：悟空」风格的游戏场景截图，画面表现悟空被二郎神击飞的瞬间，带强动作姿态、粒子效果、东方神话氛围和电影级战斗冲击力。"
         },
         {
             id: 20,
@@ -199,21 +199,21 @@ const casesData = {
             title: "GTA 圣安地列斯玩法截图",
             method: "文生图",
             image: "images/028-retro-street-action-game.png",
-            prompt: "生成一张《GTA: San Andreas》玩法截图，一头狮子正在和 NPC 对打，保留老游戏 HUD、机位和粗粝开放世界质感，让它像真玩家录屏中截出来的一帧。"
+            prompt: "生成一张「GTA: San Andreas」玩法截图，一头狮子正在和 NPC 对打，保留老游戏 HUD、机位和粗粝开放世界质感，让它像真玩家录屏中截出来的一帧。"
         },
         {
             id: 29,
             title: "塞尔达：王国之泪风格画面",
             method: "文生图",
             image: "images/029-original-fantasy-adventure-game.png",
-            prompt: "生成一张《塞尔达传说：王国之泪》风格画面，让 Link 出现在一列 E531 通勤电车中，保留奇幻冒险氛围与现代交通空间的强反差。"
+            prompt: "生成一张「塞尔达传说：王国之泪」风格画面，让 Link 出现在一列 E531 通勤电车中，保留奇幻冒险氛围与现代交通空间的强反差。"
         },
         {
             id: 30,
             title: "宠物品牌联名海报",
             method: "文生图",
             image: "images/030-pet-brand-collab-poster.png",
-            prompt: "制作一张宠物 × 快餐品牌的联名海报，让同一只猫保持外形一致，穿品牌员工制服站在柜台卖炸鸡与套餐，加入红白品牌色、餐厅道具和中文促销文案。"
+            prompt: "制作一张宠物 x 快餐品牌的联名海报，让同一只猫保持外形一致，穿品牌员工制服站在柜台卖炸鸡与套餐，加入红白品牌色、餐厅道具和中文促销文案。"
         },
         {
             id: 31,
@@ -308,7 +308,7 @@ const casesData = {
             title: "宋朝社交媒体动态",
             method: "文生图",
             image: "images/043-song-dynasty-social-feed.png",
-            prompt: "生成一张"宋朝人的朋友圈"手机社交媒体界面，头像、昵称、点赞评论和状态栏都按现代产品逻辑排布，但内容全部替换为苏轼发东坡肉动态的古代版本，文字清晰可读。"
+            prompt: "生成一张「宋朝人的朋友圈」手机社交媒体界面，头像、昵称、点赞评论和状态栏都按现代产品逻辑排布，但内容全部替换为苏轼发东坡肉动态的古代版本，文字清晰可读。"
         },
         {
             id: 44,
@@ -322,7 +322,7 @@ const casesData = {
             title: "食物双关心理咨询室",
             method: "文生图",
             image: "images/045-food-pun-therapy-office.png",
-            prompt: "生成一张荒诞温馨的 3D 喜剧插画：拟人化牛油果坐在心理咨询沙发上说"我感觉内心空空的"，对面是拟人化勺子治疗师，整个房间像真实咨询室。"
+            prompt: "生成一张荒诞温馨的 3D 喜剧插画：拟人化牛油果坐在心理咨询沙发上说「我感觉内心空空的」，对面是拟人化勺子治疗师，整个房间像真实咨询室。"
         },
         {
             id: 46,
@@ -336,7 +336,7 @@ const casesData = {
             title: "讽刺四格产品广告",
             method: "文生图",
             image: "images/047-satirical-product-ad-comic.png",
-            prompt: "做一张 2x2 恶搞产品广告网格，四个商品都一本正经地介绍荒谬功能，例如"可以坐的石头""会骂人的石头"，每格都带销量徽章、卖点列表和价格。"
+            prompt: "做一张 2x2 恶搞产品广告网格，四个商品都一本正经地介绍荒谬功能，例如「可以坐的石头」「会骂人的石头」，每格都带销量徽章、卖点列表和价格。"
         },
         {
             id: 48,
@@ -394,45 +394,45 @@ const casesData = {
             title: "公共建筑 A1 展板图",
             method: "文生图",
             image: "images/055-public-building-a1-presentation-board.png",
-            prompt: "生成一座公共建筑效果图图片，大型美术馆，"高技派"+"现代主义"，建筑坐落在青岛城市的海边，高角度鸟瞰图，白天下午 3 点光影效果。生成该建筑的 A1 展板图，要有展板图上所有应该有的分析图类型和分析模块。"
+            prompt: "生成一座公共建筑效果图图片，大型美术馆，「高技派」+「现代主义」，建筑坐落在青岛城市的海边，高角度鸟瞰图，白天下午 3 点光影效果。生成该建筑的 A1 展板图，要有展板图上所有应该有的分析图类型和分析模块。"
         },
         {
             id: 56,
             title: "大师海报：柯布西耶与现代建筑",
             method: "文生图",
             image: "images/056-le-corbusier-modern-architecture-poster.png",
-            prompt: "A professional cinematic poster titled 'LE CORBUSIER'. The central theme is a complex double exposure effect featuring the side profile silhouette of the architect Le Corbusier, complete with his signature round-framed glasses and a subtle tie. Inside his silhouette, a breathtaking layered composition illustrates the evolution of modern architecture through his key works."
+            prompt: "A professional cinematic poster titled LE CORBUSIER. The central theme is a complex double exposure effect featuring the side profile silhouette of the architect Le Corbusier, complete with his signature round-framed glasses and a subtle tie. Inside his silhouette, a breathtaking layered composition illustrates the evolution of modern architecture through his key works."
         }
     ]
 };
 
 // 渲染案例卡片
 function renderCases() {
-    Object.keys(casesData).forEach(category => {
-        const container = document.getElementById(`cases-${category}`);
+    Object.keys(casesData).forEach(function(category) {
+        var container = document.getElementById('cases-' + category);
         if (!container) return;
         
-        container.innerHTML = casesData[category].map(caseItem => `
-            <div class="case-card">
-                <img src="${caseItem.image}" alt="${caseItem.title}" class="case-image" loading="lazy" onclick="openImageViewer(this.src)">
-                <div class="case-content">
-                    <h4 class="case-title">${caseItem.title}</h4>
-                    <span class="case-method">${caseItem.method}</span>
-                    <p class="case-prompt" id="prompt-${caseItem.id}">${caseItem.prompt}</p>
-                    <div class="case-actions">
-                        <button class="expand-btn" onclick="togglePrompt(${caseItem.id})">展开</button>
-                        <button class="copy-btn" onclick="copyPrompt(\`${caseItem.prompt.replace(/`/g, '\\`').replace(/\\/g, '\\\\')}\`)">复制提示词</button>
-                    </div>
-                </div>
-            </div>
-        `).join('');
+        var html = '';
+        casesData[category].forEach(function(caseItem) {
+            html += '<div class="case-card">';
+            html += '<img src="' + caseItem.image + '" alt="' + caseItem.title + '" class="case-image" loading="lazy" onclick="openImageViewer(this.src)">';
+            html += '<div class="case-content">';
+            html += '<h4 class="case-title">' + caseItem.title + '</h4>';
+            html += '<span class="case-method">' + caseItem.method + '</span>';
+            html += '<p class="case-prompt" id="prompt-' + caseItem.id + '">' + caseItem.prompt + '</p>';
+            html += '<div class="case-actions">';
+            html += '<button class="expand-btn" onclick="togglePrompt(' + caseItem.id + ')">展开</button>';
+            html += '<button class="copy-btn" onclick="copyPrompt(this.parentElement.parentElement.querySelector(\'.case-prompt\').textContent)">复制提示词</button>';
+            html += '</div></div></div>';
+        });
+        container.innerHTML = html;
     });
 }
 
 // 展开/收起提示词
 function togglePrompt(id) {
-    const promptEl = document.getElementById(`prompt-${id}`);
-    const btn = promptEl.nextElementSibling.querySelector('.expand-btn');
+    var promptEl = document.getElementById('prompt-' + id);
+    var btn = promptEl.nextElementSibling.querySelector('.expand-btn');
     
     if (promptEl.classList.contains('expanded')) {
         promptEl.classList.remove('expanded');
@@ -445,11 +445,10 @@ function togglePrompt(id) {
 
 // 复制提示词
 function copyPrompt(text) {
-    navigator.clipboard.writeText(text).then(() => {
+    navigator.clipboard.writeText(text).then(function() {
         showToast('已复制到剪贴板');
-    }).catch(err => {
-        // 降级方案
-        const textarea = document.createElement('textarea');
+    }).catch(function() {
+        var textarea = document.createElement('textarea');
         textarea.value = text;
         document.body.appendChild(textarea);
         textarea.select();
@@ -461,42 +460,33 @@ function copyPrompt(text) {
 
 // 显示 Toast 提示
 function showToast(message) {
-    const toast = document.getElementById('toast');
+    var toast = document.getElementById('toast');
     toast.textContent = message;
     toast.classList.add('show');
-    
-    setTimeout(() => {
+    setTimeout(function() {
         toast.classList.remove('show');
     }, 2000);
 }
 
 // 图片查看器
 function openImageViewer(src) {
-    let viewer = document.querySelector('.image-viewer');
-    
+    var viewer = document.querySelector('.image-viewer');
     if (!viewer) {
         viewer = document.createElement('div');
         viewer.className = 'image-viewer';
-        viewer.innerHTML = `
-            <button class="close-viewer" onclick="closeImageViewer()">×</button>
-            <img src="" alt="预览图片">
-        `;
+        viewer.innerHTML = '<button class="close-viewer" onclick="closeImageViewer()">×</button><img src="" alt="预览图片">';
         document.body.appendChild(viewer);
-        
-        viewer.addEventListener('click', (e) => {
-            if (e.target === viewer) {
-                closeImageViewer();
-            }
+        viewer.addEventListener('click', function(e) {
+            if (e.target === viewer) closeImageViewer();
         });
     }
-    
     viewer.querySelector('img').src = src;
     viewer.classList.add('show');
     document.body.style.overflow = 'hidden';
 }
 
 function closeImageViewer() {
-    const viewer = document.querySelector('.image-viewer');
+    var viewer = document.querySelector('.image-viewer');
     if (viewer) {
         viewer.classList.remove('show');
         document.body.style.overflow = '';
@@ -504,85 +494,46 @@ function closeImageViewer() {
 }
 
 // 侧边栏控制
-const sidebar = document.getElementById('sidebar');
-const menuBtn = document.getElementById('menuBtn');
-const closeSidebar = document.getElementById('closeSidebar');
+var sidebar = document.getElementById('sidebar');
+var menuBtn = document.getElementById('menuBtn');
+var closeSidebar = document.getElementById('closeSidebar');
 
-menuBtn.addEventListener('click', () => {
-    sidebar.classList.add('show');
-});
+menuBtn.addEventListener('click', function() { sidebar.classList.add('show'); });
+closeSidebar.addEventListener('click', function() { sidebar.classList.remove('show'); });
 
-closeSidebar.addEventListener('click', () => {
-    sidebar.classList.remove('show');
-});
-
-// 点击导航链接后关闭侧边栏（移动端）
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        if (window.innerWidth <= 1024) {
-            sidebar.classList.remove('show');
-        }
+document.querySelectorAll('.nav-link').forEach(function(link) {
+    link.addEventListener('click', function() {
+        if (window.innerWidth <= 1024) sidebar.classList.remove('show');
     });
 });
 
 // 返回顶部
-const backToTop = document.getElementById('backToTop');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        backToTop.classList.add('visible');
-    } else {
-        backToTop.classList.remove('visible');
-    }
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) backToTop.classList.add('visible');
+    else backToTop.classList.remove('visible');
 });
-
-backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
 // 导航高亮
-const sections = document.querySelectorAll('.section[id]');
-const navLinks = document.querySelectorAll('.nav-link');
-
-const observerOptions = {
-    root: null,
-    rootMargin: '-20% 0px -70% 0px',
-    threshold: 0
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+var sections = document.querySelectorAll('.section[id]');
+var navLinks = document.querySelectorAll('.nav-link');
+var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
         if (entry.isIntersecting) {
-            const id = entry.target.getAttribute('id');
-            navLinks.forEach(link => {
+            var id = entry.target.getAttribute('id');
+            navLinks.forEach(function(link) {
                 link.classList.remove('active');
-                if (link.getAttribute('href') === `#${id}`) {
-                    link.classList.add('active');
-                }
+                if (link.getAttribute('href') === '#' + id) link.classList.add('active');
             });
         }
     });
-}, observerOptions);
+}, { rootMargin: '-20% 0px -70% 0px' });
 
-sections.forEach(section => {
-    observer.observe(section);
-});
-
-// 复制按钮事件绑定
-document.querySelectorAll('.copy-btn[data-prompt]').forEach(btn => {
-    btn.addEventListener('click', () => {
-        copyPrompt(btn.dataset.prompt);
-    });
-});
+sections.forEach(function(section) { observer.observe(section); });
 
 // ESC 关闭图片查看器
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        closeImageViewer();
-    }
-});
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeImageViewer(); });
 
 // 初始化
-document.addEventListener('DOMContentLoaded', () => {
-    renderCases();
-});
+document.addEventListener('DOMContentLoaded', renderCases);
