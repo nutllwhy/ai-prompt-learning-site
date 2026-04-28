@@ -422,6 +422,86 @@ tr:hover {
     color: var(--text-light);
 }
 
+/* 案例筛选栏 */
+.case-filter-bar {
+    margin-bottom: 32px;
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    padding: 16px 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.search-box {
+    margin-bottom: 16px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-tab {
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.filter-tab:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filter-tab.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* 案例容器 */
+.cases-container {
+    min-height: 400px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-light);
+}
+
+.no-results h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+/* 案例分类标题（筛选模式下隐藏） */
+.case-category.hidden-title {
+    display: none;
+}
+
 /* 案例分类 */
 .case-category {
     margin: 40px 0;
@@ -490,6 +570,16 @@ tr:hover {
     border-radius: 4px;
     font-size: 12px;
     margin-bottom: 12px;
+}
+
+.case-category-tag {
+    display: inline-block;
+    padding: 3px 8px;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    font-size: 11px;
+    color: var(--text-light);
+    margin-bottom: 8px;
 }
 
 .case-prompt {
@@ -730,5 +820,19 @@ tr:hover {
     
     .formula-box code {
         font-size: 12px;
+    }
+    
+    .filter-tabs {
+        gap: 6px;
+    }
+    
+    .filter-tab {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .case-filter-bar {
+        margin: 0 -16px 24px;
+        padding: 12px 16px;
     }
 }

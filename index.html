@@ -271,68 +271,26 @@
         <section id="chapter5" class="section">
             <h2>第五章：实战案例库</h2>
             
-            <!-- 文创类 -->
-            <div class="case-category">
-                <h3 class="category-title">🎨 文创类</h3>
-                <p class="category-desc">兼具收藏感、知识密度和二次创作空间，适合文旅号、知识号、出版社、展览物料和文创周边的原型生产。</p>
-                
-                <div class="cases-grid" id="cases-wenchuang">
-                    <!-- 案例通过 JS 动态加载 -->
+            <!-- 搜索和筛选 -->
+            <div class="case-filter-bar">
+                <div class="search-box">
+                    <input type="text" id="caseSearch" placeholder="搜索案例标题或提示词..." class="search-input">
+                </div>
+                <div class="filter-tabs" id="filterTabs">
+                    <button class="filter-tab active" data-category="all">全部 (67)</button>
+                    <button class="filter-tab" data-category="dianshang">🛒 电商类 (11)</button>
+                    <button class="filter-tab" data-category="wenchuang">🎨 文创类 (11)</button>
+                    <button class="filter-tab" data-category="yingshi">🎬 影视类 (10)</button>
+                    <button class="filter-tab" data-category="kuagip">🎮 跨IP类 (10)</button>
+                    <button class="filter-tab" data-category="pinpai">🏷️ 品牌联动类 (11)</button>
+                    <button class="filter-tab" data-category="egao">😂 恶搞类 (12)</button>
+                    <button class="filter-tab" data-category="jianzhu">🏛️ 建筑设计类 (2)</button>
                 </div>
             </div>
 
-            <!-- 影视类 -->
-            <div class="case-category">
-                <h3 class="category-title">🎬 影视类</h3>
-                <p class="category-desc">体现电影感和提案感，把分镜、设定、棚拍、宣传板整合成完整的成片方案。</p>
-                
-                <div class="cases-grid" id="cases-yingshi">
-                </div>
-            </div>
-
-            <!-- 跨IP类 -->
-            <div class="case-category">
-                <h3 class="category-title">🎮 跨 IP 类</h3>
-                <p class="category-desc">让角色、界面、游戏语法和平台风格看起来像原本就属于同一个宇宙。</p>
-                
-                <div class="cases-grid" id="cases-kuagip">
-                </div>
-            </div>
-
-            <!-- 品牌联动类 -->
-            <div class="case-category">
-                <h3 class="category-title">🏷️ 品牌联动类</h3>
-                <p class="category-desc">完整模拟广告、直播、电商详情页、菜单、杂志、官网等真实商业载体。</p>
-                
-                <div class="cases-grid" id="cases-pinpai">
-                </div>
-            </div>
-
-            <!-- 恶搞类 -->
-            <div class="case-category">
-                <h3 class="category-title">😂 恶搞类</h3>
-                <p class="category-desc">把"梗"做成完整视觉成品，只要文字可读、画面够真、反差够大，就极易形成转发。</p>
-                
-                <div class="cases-grid" id="cases-egao">
-                </div>
-            </div>
-
-            <!-- 建筑设计类 -->
-            <div class="case-category">
-                <h3 class="category-title">🏛️ 建筑设计类</h3>
-                <p class="category-desc">建筑竞赛级效果图与大师研究海报。</p>
-                
-                <div class="cases-grid" id="cases-jianzhu">
-                </div>
-            </div>
-
-            <!-- 电商类 -->
-            <div class="case-category">
-                <h3 class="category-title">🛒 电商类</h3>
-                <p class="category-desc">覆盖主图、促销海报、详情页、场景图、模特图、包装设计、食品摄影、直播间、小红书封面、跨境广告等电商全场景。</p>
-                
-                <div class="cases-grid" id="cases-dianshang">
-                </div>
+            <!-- 案例展示区 -->
+            <div class="cases-container" id="casesContainer">
+                <!-- 案例通过 JS 动态加载 -->
             </div>
         </section>
 
